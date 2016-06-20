@@ -14,8 +14,6 @@ module.exports = function(incomingProps, defaultProps) {
   incomingProps = _.clone(incomingProps);
   delete incomingProps.children;
 
-  // console.log(defaultProps, incomingProps);
-
   if (incomingProps)
     _.merge(computedProps, defaultProps, incomingProps);
   else
@@ -34,8 +32,6 @@ module.exports = function(incomingProps, defaultProps) {
     _.merge(computedProps.style, defaultProps.style, incomingPropsStyle);
 
   }
-
-  // console.log("computedProps ", computedProps);
 
   return computedProps;
 

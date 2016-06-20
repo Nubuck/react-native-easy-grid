@@ -18,7 +18,6 @@ export default class RowNB extends Component {
         var defaultProps = {
             style: type
         }
-      	console.log(computeProps(this.props, defaultProps), "proppppppss");
         return computeProps(this.props, defaultProps);
 
     }
